@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Dash</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="ui-start" class="overlay">
+    <h1>NEON<span>DASH</span></h1>
+    <p class="subtitle">one button. pure reflex.</p>
+    <div class="instructions">
+      <p><kbd>SPACE</kbd> / <kbd>TAP</kbd> to dash</p>
+      <p>avoid the obstacles</p>
+      <p>survive as long as you can</p>
+    </div>
+    <button id="btn-start" class="neon-btn">START</button>
+  </div>
+
+  <div id="ui-hud" class="hud hidden">
+    <div id="score-display">0</div>
+    <button id="btn-sound" class="sound-btn" title="Toggle sound">
+      <span id="sound-icon">&#9834;</span>
+    </button>
+  </div>
+
+  <div id="ui-gameover" class="overlay hidden">
+    <h2>GAME OVER</h2>
+    <p id="final-score" class="big-score">0</p>
+    <p id="best-score" class="best">BEST: 0</p>
+    <button id="btn-restart" class="neon-btn">RETRY</button>
+    <p class="retry-hint">or press SPACE / tap to restart</p>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
